@@ -1,5 +1,4 @@
-import { Module } from "../core/module";
-
+import {Module} from '../core/module'
 
 export class ClicksModule extends Module {
   constructor() {
@@ -122,6 +121,3 @@ export class ClicksModule extends Module {
     }
   }
 }
-
-
-

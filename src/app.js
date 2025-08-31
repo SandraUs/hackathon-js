@@ -1,3 +1,7 @@
+import { showCustomMessage } from './modules/custom-massage.js';
+
+showCustomMessage("Привет! Мы успешно завершили модуль по JavaScript! 🎉", 4000);
+
 import { Module } from "./core/module";
 import { RandomSoundModule } from "./modules/random-sound";
 

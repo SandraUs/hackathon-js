@@ -1,4 +1,5 @@
-import { Menu } from "./core/menu";
+import {Menu} from './core/menu'
+
 
 export default class ContextMenu extends Menu {
     constructor(selector) {
