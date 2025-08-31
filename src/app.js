@@ -1,7 +1,12 @@
-import './styles.css';
 import './modules/css/timer.css';
-import ContextMenu from './menu';
 import { TimerModule } from './modules/timer.module';
+
+import './styles.css'
+import { ContextMenu } from './menu.js'
+import { ShapeModule } from './modules/shape.module.js'
+
+
+menu.add(new ShapeModule())
 
 const menu = new ContextMenu('#menu');
 menu.add(new TimerModule());
