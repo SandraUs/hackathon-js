@@ -1,3 +1,10 @@
+import img0 from './Images_Click_Modules/0.jpg'
+import img1_5 from './Images_Click_Modules/1-5.jpg'
+import img6_10 from './Images_Click_Modules/6-10.jpg'
+import img11_15 from './Images_Click_Modules/11-15.jpg'
+import img16_20 from './Images_Click_Modules/16-20.jpg'
+import img21 from './Images_Click_Modules/21.jpg'
+
 import {Module} from '../core/module'
 
 export class ClicksModule extends Module {
@@ -67,13 +74,14 @@ export class ClicksModule extends Module {
   //Вывод изображения за количество кликов
   getAnImageAfterClick() {
     const numberOfClicks = this.countClick
+
     const images = [
-      {img: 'Images_Click_Modules/0.jpg', min: 0, max: 0},
-      {img: 'Images_Click_Modules/1-5.jpg', min: 1, max: 5},
-      {img: 'Images_Click_Modules/6-10.jpg', min: 6, max: 10},
-      {img: 'Images_Click_Modules/11-15.jpg', min: 11, max: 15},
-      {img: 'Images_Click_Modules/16-20.jpg', min: 16, max: 20},
-      {img: 'Images_Click_Modules/21.jpg', min: 21, max: 10000},
+      {img: img0, min: 0, max: 0},
+      {img: img1_5, min: 1, max: 5},
+      {img: img6_10, min: 6, max: 10},
+      {img: img11_15, min: 11, max: 15},
+      {img: img16_20, min: 16, max: 20},
+      {img: img21, min: 21, max: 10000},
     ]
 
     const findImage = images.find((result) => {
