@@ -10,8 +10,7 @@ import { BackgroundDefaultModule } from "./modules/background-default.module";
 import { HowMuchTimeSpentModule } from "./modules/howmuch-time-spent.module";
 import  ContextMenu  from './menu.js'
 import { ShapeModule } from './modules/shape.module.js'
-
-showCustomMessage("Привет! Мы успешно завершили модуль по JavaScript! 🎉", 4000);
+import { ShowCustomMessage } from './modules/custom-massage.js';
 
 const menu = new ContextMenu('#menu');
 menu.add(new TimerModule());
@@ -21,6 +20,7 @@ menu.add(new RandomSoundModule());
 menu.add(new BackgroundModule());
 menu.add(new BackgroundDefaultModule());
 menu.add(new HowMuchTimeSpentModule());
+menu.add(new ShowCustomMessage("Привет! Мы успешно завершили модуль по JavaScript! 🎉", 4000));
   
 document.addEventListener('contextmenu', event => {
     event.preventDefault();
