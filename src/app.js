@@ -10,6 +10,8 @@ import './modules/css/timer.css';
 import { TimerModule } from './modules/timer.module';
 
 import './styles.css'
+import './modules/css/Clicks_Module.css'
+import { ClicksModule } from './modules/clicks.module'
 
 import {BackgroundModule} from "@/modules/background.module";
 import {BackgroundDefaultModule} from "@/modules/background-default.module";
@@ -51,4 +53,3 @@ contextMenu.add(new RandomSoundModule());
 document.addEventListener('click', () => {
     menu.close();
 })
-
