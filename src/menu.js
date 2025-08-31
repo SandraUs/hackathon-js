@@ -1,5 +1,4 @@
-import {Menu} from './core/menu';
-
+import { Menu } from "./core/menu";
 
 export default class ContextMenu extends Menu {
     constructor(selector) {
@@ -7,10 +6,22 @@ export default class ContextMenu extends Menu {
         this.modules = [];
     }
 
-    open(x, y) {
-        if(this.modules.length === 0) {
-            return
-        }
+
+    // Показываем меню по правому клику
+    document.addEventListener("contextmenu", (event) => {
+      event.preventDefault();
+      this.open(event.clientX, event.clientY);
+    });
+
+
+    // Закрываем меню по Escape
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        this.close();
+      }
+    });
+  }
+}
 
         this.el.innerHTML = '';
 

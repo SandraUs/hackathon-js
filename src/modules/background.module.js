@@ -6,3 +6,4 @@ export class BackgroundModule extends Module {// type: background, text: Пом�
     document.body.style.backgroundImage = getRandomColor();
   }
 }
+
