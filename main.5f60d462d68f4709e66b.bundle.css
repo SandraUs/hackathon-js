@@ -16,7 +16,7 @@ body {
 .menu {
     position: fixed;
     z-index: 1000;
-    width: 150px;
+    width: 200px;
     background: #1b1a1a;
     border-radius: 5px;
     display: none;
@@ -147,6 +147,7 @@ body {
         transform: translateY(150px);
     }
 }
+
 .container-start {
   position: fixed;
   top: 50%;
