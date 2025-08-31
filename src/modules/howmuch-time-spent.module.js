@@ -2,8 +2,8 @@ import {Module} from "@/core/module";
 import {showSpentTime} from "@/utils";
 
 export class HowMuchTimeSpentModule extends Module {// type: how-much-time, text: Время проведённое на сайте
-  constructor(type, text) {
-    super(type, text)
+  constructor() {
+    super('type', 'text')
     this.startTimeValue = Date.now()
   }
 
