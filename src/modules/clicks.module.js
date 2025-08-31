@@ -2,11 +2,14 @@ import {Module} from '../core/module'
 
 export class ClicksModule extends Module {
   constructor() {
-    this.duration = 3000
+    super('click', 'Счетчик кликов') 
     this.countClick = 0
     this.tracking = false
     this.clickHandlerBind = this.trackClick.bind(this)
     this.container = null
+    this.duration = 3000
+    
+    
   }
   //Считаем только клик левой кнопкой мыши
   trackClick(event) {
