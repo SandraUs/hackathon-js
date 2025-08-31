@@ -2,7 +2,7 @@ import {Module} from '../core/module';
 
 export class BackgroundDefaultModule extends Module{// type: background-default, text: Стандартный цвет
   constructor() {
-    super('background', 'background')
+    super('background-default', 'Стандартный цвет фона')
   }
   
   trigger() {
